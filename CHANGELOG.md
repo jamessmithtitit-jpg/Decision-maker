@@ -1,3 +1,20 @@
-# 2nd Oct , 20206 
+# Changelog
 
-`ADDED`: current_time.py module which returns current time in H:M:S format . 
+All notable changes to this project are documented in this file based on Git version control.
+
+---
+
+## [2026-10-02] - 2nd Oct, 2026
+
+### Commit `7cde77a` - Time input, calculator draft & project roadmap
+- `ADDED`: `time/time_input.py` with `time_input()` function to prompt and collect user input for hours, minutes, and seconds.
+- `ADDED`: `time/time_calculator.py` with `add_time()` function signature for computing total time.
+- `ADDED`: `plan.md` outlining the roadmap for V1 (daily changelog tracking and IST time calculation).
+- `ADDED`: `CHANGELOG.md` tracking development progress.
+
+### Commit `884409e` - Updated current time module
+- `CHANGED`: `time/current_time.py` refactored `current_time()` to return hour, minute, and second values.
+
+### Commit `b27c977` - Initial project setup
+- `ADDED`: Initial project files: `main.py`, `plan.md`, and `CHANGELOG.md`.
+- `ADDED`: `time/current_time.py` with basic `datetime` retrieval logic.

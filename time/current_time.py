@@ -1,11 +1,13 @@
-from datetime import datetime , time
+from datetime import datetime 
 
 def current_time():
-    current_time = datetime.now()
+    hours = datetime.now("%H")
+    minutes = datetime.now("%M")
+    seconds = datetime.now("%S") 
 
-    return current_time.hour() 
+    return  hours , minutes , seconds 
 
 
 
-print(current_time())
+current_time()
 

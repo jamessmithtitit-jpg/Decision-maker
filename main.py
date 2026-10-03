@@ -21,3 +21,9 @@ So now I gotta make multiple functions for calculating time like :
 
 First calculate the all the seconds if they exceed 60 then they will be divided by 60 and the quotent will be added to minutes and the reminder will be seconds and if the minutes exceed 60 then again minutes will be divided by 60 and then the quotent will be taken added to hours and the reminder will be minutes and then if the hours will be 24 or exceed 24 then they will be minu by 24 
 """
+
+
+import Time.time_utils 
+
+t = Time() 
+

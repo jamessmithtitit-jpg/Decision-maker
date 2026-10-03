@@ -30,11 +30,7 @@ class Time:
             print(f"{self.total_hours}:{self.total_minutes}:{self.total_seconds}")
 
 
-t = Time()
 
-t.get_time_input()
-
-t.show_ending_time()
 
             
              

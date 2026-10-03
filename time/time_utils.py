@@ -12,8 +12,20 @@ class time:
         self.input_hours = int(input("Hours(24Hr Format is taken here): "))
         self.input_minutes = int(input("Minutes(24Hr Format is taken here): "))
         self.input_seconds = int(input("Seconds(24Hr Format is taken here): "))
-    def calculate_time(self):
-        
+    def show_ending_time(self ):
+            self.total_hours = self.current_hours + self.input_hours
+            self.total_minutes = self.current_minutes + self.input_minutes
+            self.total_seconds = self.current_seconds + self.input_seconds
+            if self.total_seconds >= 60:
+                self.total_minutes = self.total_minutes + self.total_seconds / 60 
+                self.total_seconds = self.total_seconds % 60 
+            if self.total_minutes >= 60:
+                 self.total_hours = self.total_hours + self.total_minutes / 60
+                 self.total_minutes = self.total_minutes % 60 
+            if self.total_hours >= 24: 
+                 self.total_hours = self.total_hours - 24 
+             
+
         
 
 

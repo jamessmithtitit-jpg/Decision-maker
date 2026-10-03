@@ -1,6 +1,6 @@
 from datetime import datetime 
 
-class time:
+class Time:
     def __init__(self):
         self.hours = 0 
         self.minutes = 0 
@@ -17,13 +17,18 @@ class time:
             self.total_minutes = self.current_minutes + self.input_minutes
             self.total_seconds = self.current_seconds + self.input_seconds
             if self.total_seconds >= 60:
-                self.total_minutes = self.total_minutes + self.total_seconds / 60 
+                self.total_minutes = self.total_minutes + self.total_seconds // 60 
                 self.total_seconds = self.total_seconds % 60 
             if self.total_minutes >= 60:
-                 self.total_hours = self.total_hours + self.total_minutes / 60
+                 self.total_hours = self.total_hours + self.total_minutes // 60
                  self.total_minutes = self.total_minutes % 60 
             if self.total_hours >= 24: 
                  self.total_hours = self.total_hours - 24 
+            print(f"{self.total_hours}:{self.total_minutes}:{self.total_seconds}")
+time().get_time_input()
+time().show_ending_time()
+
+            
              
 
         

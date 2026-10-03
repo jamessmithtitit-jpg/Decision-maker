@@ -9,9 +9,12 @@ class Time:
         self.current_minutes = int(datetime.now().strftime("%M")) 
         self.current_seconds = int(datetime.now().strftime("%S")) 
     def get_time_input(self):
-        self.input_hours = int(input("Hours(24Hr Format is taken here): "))
-        self.input_minutes = int(input("Minutes(24Hr Format is taken here): "))
-        self.input_seconds = int(input("Seconds(24Hr Format is taken here): "))
+        try: 
+            self.input_hours = int(input("Hours(24Hr Format is taken here): "))
+            self.input_minutes = int(input("Minutes(24Hr Format is taken here): "))
+            self.input_seconds = int(input("Seconds(24Hr Format is taken here): "))
+        except ValueError:
+            print("Write the inputs in integer only ")
     def show_ending_time(self ):
             self.total_hours = self.current_hours + self.input_hours
             self.total_minutes = self.current_minutes + self.input_minutes
@@ -25,8 +28,13 @@ class Time:
             if self.total_hours >= 24: 
                  self.total_hours = self.total_hours - 24 
             print(f"{self.total_hours}:{self.total_minutes}:{self.total_seconds}")
-time().get_time_input()
-time().show_ending_time()
+
+
+t = Time()
+
+t.get_time_input()
+
+t.show_ending_time()
 
             
              

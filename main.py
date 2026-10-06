@@ -27,7 +27,7 @@ import random # Importing random
 
 # So in this version I will only have like add task which will ask for the tasks again and again like with probability 
 # So now I would need one more thing that is a screen asking for preset or custom inputs 
-start_screen = input("""
+initial_input = input("""
                         Do you want to use:
                         1.Preset 
                         2.Custom
@@ -46,7 +46,27 @@ def preset():
                       6.Coding/break(99/1)when coding seession is not completed 
                       """)  
     if selection == "1":
-        answer = random.choices()
+        answer = random.choices(population=['JEE Task' , 'Coding Task'] , weights=[90,10] , k=100)
+        print(answer[random.randint(0,99)])
+    if selection == "2":
+            answer = random.choices(population=['JEE Task' , 'Coding Task'] , weights=[10,90] , k=100)
+            print(answer[random.randint(0,99)])
+    if selection == "3":
+            answer = random.choices(population=['JEE Task' , 'Break'] , weights=[50,50] , k=100)
+            print(answer[random.randint(0,99)])
+    if selection == "4":
+            answer = random.choices(population=['JEE Task' , 'Break'] , weights=[99 , 1] , k=100)
+            print(answer[random.randint(0,99)])
+    if selection == "5":
+            answer = random.choices(population=['Coding' , 'Break'] , weights=[30,70] , k=100)
+            print(answer[random.randint(0,99)])
+            
+    if selection == "6":
+            answer = random.choices(population=['Coding' , 'Break'] , weights=[99,1] , k=100)
+            print(answer[random.randint(0,99)])
+        
+        
+        
 def custom(): 
     tasks : list[str  ] = [] # Making list because it is defaultly taken in random.choices 
 
@@ -75,5 +95,12 @@ def custom():
             print(tasks)
             break 
 
-    answer = random.choices(population=tasks , weights=percentage , k=100)
-    print(answer[random.randint(0, 99)])
+        answer = random.choices(population=tasks , weights=percentage , k=100)
+        print(answer[random.randint(0, 99)])
+
+if initial_input == "1":
+    preset()
+elif initial_input == "2":
+    custom()
+else:
+    raise ValueError("Only the appropriate choices are selected here")

@@ -28,3 +28,5 @@ All notable changes to this project are documented in this file based on Git ver
 `ChangeLog new format` : From now on every git commit will have a change number and also don't forget to write that change description everytime 
 
 `Change 1` : Completed the planed feature for having custom and preset options. 
+
+`Plan` : Planning for the project to be a local webapp

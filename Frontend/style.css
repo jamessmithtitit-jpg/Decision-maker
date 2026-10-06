@@ -1,0 +1,30 @@
+body {
+    background-color: #023; 
+}
+
+h1{
+    color: red; 
+    text-align: left;  
+}
+
+p {
+    font-family: monospace;
+    font-size: 20px; 
+    color: red; 
+    text-align: left; 
+}
+.send-button {
+    background-color: #05FFEE;
+    border: 0; 
+    line-height: 2;
+    text-align: center; 
+    color: black;
+    text-shadow: 0.5px 0.5px 0.5px white;
+
+
+}
+
+.send-button:hover {
+    background-color: white; 
+    color: red; 
+}

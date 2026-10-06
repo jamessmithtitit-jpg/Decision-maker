@@ -7,3 +7,7 @@ This project solves a problem sometimes we are unable to make a decision and I t
 
 ### Is the project under development ?
 Yes , currently this project is under development if you want you can just drop any issue I will try to fix it . 
+
+### How to use this project ? 
+
+Well there are 2 ways 

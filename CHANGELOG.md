@@ -30,3 +30,5 @@ All notable changes to this project are documented in this file based on Git ver
 `Change 1` : Completed the planed feature for having custom and preset options. 
 
 `Plan` : Planning for the project to be a local webapp
+
+`Change 2` : Added some frontend though it was my first time doing them so if something feels off just report that 

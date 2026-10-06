@@ -31,7 +31,7 @@ initial_input = input("""
                         Do you want to use:
                         1.Preset 
                         2.Custom
-                        """)
+                        Enter the value here for the input: """)
 
 
 

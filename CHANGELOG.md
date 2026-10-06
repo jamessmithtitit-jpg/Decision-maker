@@ -25,3 +25,6 @@ All notable changes to this project are documented in this file based on Git ver
 
 `Added` : Feature to choose tasks randomly from the given tasks with given percentages functions made for this  `preset` and `custom` and input variable `start screen`
 `Plan` : Thinking of making choice for preset and custom and the changes are ongoing 
+`ChangeLog new format` : From now on every git commit will have a change number and also don't forget to write that change description everytime 
+
+`Change 1` : Completed the planed feature for having custom and preset options. 

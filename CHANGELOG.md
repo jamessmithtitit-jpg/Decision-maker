@@ -18,3 +18,10 @@ All notable changes to this project are documented in this file based on Git ver
 ### Commit `b27c977` - Initial project setup
 - `ADDED`: Initial project files: `main.py`, `plan.md`, and `CHANGELOG.md`.
 - `ADDED`: `time/current_time.py` with basic `datetime` retrieval logic.
+
+
+## main.py changes 
+### 6 Oct , 26
+
+`Added` : Feature to choose tasks randomly from the given tasks with given percentages functions made for this  `preset` and `custom` and input variable `start screen`
+`Plan` : Thinking of making choice for preset and custom and the changes are ongoing 
